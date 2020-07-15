@@ -1,0 +1,295 @@
+:root {
+  --white: #fff;
+  --dark: rgb(51, 51, 51);
+  --yellow: rgb(222, 138, 81);
+  --orange: rgb(105, 70, 13);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Generel Style */
+
+.wrapper {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.hamburger {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  top: 15px;
+  right: 20px;
+  z-index: 1000;
+  height: 15px;
+  width: 20px;
+  border: 1px solid #000;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.read-more {
+  color: var(--yellow);
+  font-size: 2rem;
+}
+.meta {
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  color: var(--orange);
+}
+
+/* Header Start */
+header {
+  background: var(--white);
+}
+
+.flex-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand {
+  width: 40%;
+}
+
+.main-nav {
+  width: 60%;
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: var(--dark);
+}
+
+/* Hero Section */
+
+.hero figure img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+
+.hero .textbox {
+  position: relative;
+  width: 80%;
+  max-width: 80%;
+  padding: 50px 50px;
+  background-color: var(--white);
+  margin: -8em auto 0em;
+  text-align: center;
+}
+
+.hero .textbox h2 {
+  font-size: 6.5rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  color: var(--dark);
+  padding: 1rem 0;
+}
+
+.hero .textbox p {
+  font-size: 2.5rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  line-height: 125%;
+}
+
+.hero .textbox a {
+  margin: 1.5rem 0;
+  font-size: 2.5rem;
+  color: var(--yellow);
+}
+
+.hero .outside-text {
+  display: inline;
+  position: absolute;
+  right: 3rem;
+  bottom: -40rem;
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  transform: rotate(90deg);
+  transform-origin: 100% center;
+}
+
+/* content section 🌊 🌊 🌊  */
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 6rem;
+}
+
+.content .post {
+  display: flex;
+  padding: 15px;
+  margin-bottom: 6rem;
+}
+
+.content .post figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+.first-post {
+  transform: translate(-5rem, 5rem);
+}
+
+.first-post h3 {
+  font-size: 4rem;
+}
+
+.first-post p {
+  font-size: 2rem;
+}
+
+.first-post .meta {
+  font-size: 1.6rem;
+  border-bottom: 1px solid var(--orange);
+  padding: 1rem 0;
+  color: var(--orange);
+}
+
+.first-post_desc {
+  line-height: 150%;
+  font-size: 1.1rem;
+  padding: 3rem 0 1rem;
+}
+
+.first-post a {
+  float: right;
+}
+
+.more-post {
+  display: flex;
+}
+
+.more-post > div {
+  padding: 15px;
+}
+
+.more-post div figure img {
+  width: 100%;
+  height: auto;
+}
+
+.more-post div div {
+  padding: 2rem 1rem;
+}
+
+.more-post div div h3 {
+  font-size: 2.5rem;
+}
+
+.more-post div div .meta {
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  color: var(--orange);
+}
+
+.more-post div div p {
+  line-height: 150%;
+  font-size: 1.8rem;
+  padding-bottom: 1rem;
+}
+
+/* Featured Section 😓 😓 😓  */
+
+.featured-post {
+  background-image: linear-gradient(
+    to bottom,
+    #fff,
+    #fff 90%,
+    #c1ab9b 90%,
+    #c1ab9b
+  );
+}
+.grid-item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 15px;
+}
+.featured-post figure img {
+  width: 100%;
+  height: auto;
+}
+.featured-post-content {
+  background-color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5rem;
+}
+
+.featured-post-content h3 {
+  font-size: 4rem;
+}
+.featured-post-content p {
+  font-size: 2rem;
+  line-height: 140%;
+}
+
+.featured-post-content a {
+  margin: 1.5rem 0 0;
+}
+/* Subscribe Section 📥 📥 📥   */
+.subscribe {
+  padding: 5rem 1.5rem;
+  text-align: center;
+  background-color: #c1ab9b;
+  margin: 0 auto;
+}
+
+.subscribe form {
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+.subscribe h3 {
+  font-size: 3.3rem;
+}
+
+.subscribe p {
+  font-size: 1.7rem;
+  padding: 2.7rem 0;
+}
+
+.subscribe form input {
+  display: block;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  outline: none;
+  font-size: 1.8rem;
+}
+
+.subscribe form input[type="button"] {
+  cursor: pointer;
+}
