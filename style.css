@@ -13,6 +13,10 @@
 
 html {
   font-size: 62.5%;
+  color: #222;
+}
+body {
+  overflow-x: hidden;
 }
 
 /* Generel Style */
@@ -33,7 +37,15 @@ html {
   z-index: 1000;
   height: 15px;
   width: 20px;
-  border: 1px solid #000;
+}
+
+.line {
+  width: 100%;
+  height: 0.2rem;
+  background: #000;
+}
+.line-2 {
+  margin: 0.3rem 0;
 }
 
 a {
@@ -292,4 +304,118 @@ li a {
 
 .subscribe form input[type="button"] {
   cursor: pointer;
+}
+
+/* Footer Section 🦶 🦶 🦶  */
+
+footer {
+  background-color: #fff;
+  padding: 2.5rem 15px;
+  display: flex;
+  justify-content: center;
+}
+footer p {
+  max-width: 60rem;
+  font-size: 1.7rem;
+  line-height: 140%;
+}
+
+/* MEDIA 🖥 📲  */
+
+@media (max-width: 1144px) {
+  .featured-post-content h3 {
+    font-size: 3rem;
+  }
+  .featured-post-content .meta {
+    font-size: 1.5rem;
+  }
+  .featured-post-content p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .post .first-post {
+    transform: translate(0);
+    padding: 2rem 1.5rem;
+  }
+  .post .first-post h3 {
+    font-size: 3rem;
+  }
+
+  .post .first-post .meta {
+    font-size: 1.5rem;
+  }
+  .post .first-post p {
+    font-size: 1.7rem;
+  }
+  .featured-post .grid-item {
+    grid-template-columns: 1fr;
+  }
+  .featured-post-content {
+    padding: 5rem 1.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero .textbox h2 {
+    font-size: 3.5rem;
+  }
+  .hero .textbox p {
+    font-size: 2rem;
+  }
+  .hero .textbox a {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 810px) {
+  .post {
+    flex-direction: column;
+  }
+}
+@media (max-width: 700px) {
+  .hero .outside-text {
+    right: 1rem;
+  }
+  .main-post-section .wrapper,
+  .featured-post .wrapper {
+    width: 100%;
+  }
+  .more-post {
+    flex-direction: column;
+  }
+  header {
+    height: 8vh;
+  }
+  .flex-item {
+    justify-content: flex-start;
+  }
+  .brand {
+    width: 100%;
+  }
+  .hamburger {
+    display: block;
+  }
+  .main-nav {
+    position: absolute;
+    top: 8vh;
+    height: 92vh;
+    width: 100%;
+    right: 0;
+    z-index: 99999;
+    transform: translateX(100%);
+    transition: transform 0.2s ease-in-out;
+  }
+  .main-nav ul {
+    background-color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-nav ul li a {
+    font-size: 2rem;
+  }
 }
